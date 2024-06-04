@@ -1,0 +1,14 @@
+A, B = input().split()
+A, B= [float(A), float(B)]
+
+C, D = input().split()
+C, D= [float(C), float(D)]
+
+I = complex(input())
+
+R1 = ((C-A)**2 + (D-B)**2)**0.5
+
+R2 = ((I.imag**2 + I.real**2)**0.5)
+
+print("%.4f" % R1)
+print("%.4f" % R2)

@@ -1,0 +1,14 @@
+x = int(input())
+somador = 0
+testador = 1
+
+while x != 0:
+    print(f'Teste {testador}')
+    for i in range(x):
+        A, B = map(int, input().split())
+        somador += (A-B)
+        print(somador)
+    testador += 1
+    somador = 0
+    x = int(input())
+    print("")

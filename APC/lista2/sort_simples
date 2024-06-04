@@ -1,0 +1,13 @@
+X, Y, Z = map(int, input().split())
+
+X1 = max(X,Y,Z)
+Z1 = min(X,Y,Z)
+Y1 = (X+Y+Z) - X1 - Z1
+
+print(Z1)
+print(Y1)
+print(X1)
+print()
+print(X)
+print(Y)
+print(Z)

@@ -1,0 +1,20 @@
+x = input()
+
+nova = x[0].upper()+x[1:]
+string_maiuscula = ""
+
+if nova[0] == ".":
+    for letra in x:
+        if letra == " ":
+            print(" ",end="")
+        elif letra == ".":
+            print(".",end="")
+elif nova[1] == ".":
+    for caractere in nova:
+        string_maiuscula += caractere.upper()
+    print(string_maiuscula)
+else:
+    for ind,letra in enumerate(nova):
+        if letra == "." and (ind+1) < len(nova):
+            nova = nova[:ind+1]+" "+nova[ind+2].upper()+nova[ind+3:]
+    print(nova)

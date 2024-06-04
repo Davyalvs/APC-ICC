@@ -1,0 +1,10 @@
+X = int(input())
+
+Y = X%2
+
+if Y == 0:
+    print(X , "é par")
+    print(X+2)
+else:
+    print (X, "é ímpar")
+    print (X+2)

@@ -1,0 +1,6 @@
+def contador(X):
+    if X <= 100:
+        print(X)
+        contador(X+2)
+
+contador(2)

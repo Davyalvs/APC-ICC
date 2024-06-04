@@ -1,0 +1,28 @@
+def maior(a1,b1):
+    if a1 > b1:
+        return a1
+    else:
+        return b1
+def menor (a1,b1):
+    if a1 < b1:
+        return al
+    else:
+        return b1
+al, b1, c1 = map(float, input() .split ())
+a = maior (maior (al,b1), c1)
+c = menor (menor (al,b1), c1)
+b = al+b1+c1-a-c
+
+if a >= b+c:
+    print ('Invalido')
+else:
+    if a != b and b != c and a != c:
+        print ('Valido-Escaleno')
+    if a == b and b == c and a == c:
+        print('Valido-Equilatero')
+    if a == b != c or b == c != a or a == c != b:
+        print('Valido-Isoceles')
+    if a**2 == b**2 + c**2:
+        print ('Retangulo: S')
+    else:
+        print ('Retangulo: N')

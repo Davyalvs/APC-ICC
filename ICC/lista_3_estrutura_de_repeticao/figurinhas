@@ -1,0 +1,14 @@
+A,B = input().split()
+A,B = [int(A),int(B)]
+
+aux = A
+maior = A
+if B > A:
+    A = B
+    B = aux
+
+for i in range(1, B+1):
+    if A % i == 0 and B % i == 0:
+        mdc = i
+
+print(mdc)

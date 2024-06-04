@@ -1,0 +1,12 @@
+X = int(input())
+
+A = []
+
+for i in range(X):
+    h = input()
+    A.append(h)
+
+AR = A[::-1]
+
+print(", ".join(AR))
+

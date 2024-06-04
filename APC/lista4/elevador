@@ -1,0 +1,15 @@
+N, C = map(int, input().split())
+contador = 0
+cmax = 0
+
+for i in range(N):
+    S, E = map(int, input().split())
+    cmax -= S
+    cmax += E
+    if cmax > C:
+        contador = 1
+
+if contador == 1:
+    print("S")
+else:
+    print("N")

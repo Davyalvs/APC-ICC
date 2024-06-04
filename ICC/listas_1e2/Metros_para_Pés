@@ -1,0 +1,5 @@
+A = float(input())
+
+C = A*0.3048
+
+print("%.2f" % C)

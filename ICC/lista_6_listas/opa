@@ -1,0 +1,10 @@
+
+a=48
+b=36
+
+while a != b:
+    if a > b:
+        a = a-b
+    elif b>a:
+        b -=a
+    print(a)

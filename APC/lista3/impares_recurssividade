@@ -1,0 +1,11 @@
+def contagem(a):
+    if a>0:
+        contagem(a-2)
+        print(a)
+
+n = int(input())
+
+if n%2 == 0:
+    n -= 1
+
+contagem(n)

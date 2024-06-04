@@ -1,0 +1,31 @@
+X = int(input())
+
+n100 = X//100
+a1 = X%100
+
+n50 = a1//50
+a2 = a1%50
+
+n20 = a2//20
+a3 = a2%20
+
+n10 = a3//10
+a4 = a3%10
+
+n5 = a4//5
+a5 = a4%5
+
+n2 = a5//2
+a6 = a5%2
+
+n1 = a6
+
+print(X)
+print(n100, "nota(s) de R$ 100,00")
+print(n50, "nota(s) de R$ 50,00")
+print(n20, "nota(s) de R$ 20,00")
+print(n10, "nota(s) de R$ 10,00")
+print(n5, "nota(s) de R$ 5,00")
+print(n2, "nota(s) de R$ 2,00")
+print(n1, "nota(s) de R$ 1,00")
+

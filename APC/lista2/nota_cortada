@@ -1,0 +1,11 @@
+B = int(input())
+T = int(input())
+
+a = (B+T)*70/2
+
+if a > 5600:
+    print(1)
+elif a < 5600:
+    print(2)
+else:
+    print(0)

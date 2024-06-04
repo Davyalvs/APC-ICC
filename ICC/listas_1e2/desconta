@@ -1,0 +1,5 @@
+A = float(input())
+
+m = A * 0.94
+
+print("%.2f" % m)

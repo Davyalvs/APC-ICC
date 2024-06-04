@@ -1,0 +1,14 @@
+x = input()
+
+vog = "aeiouAEIOUáéíóúÁÉÍÓÚ"
+nova = ""
+
+for i in x:
+    if i == " ":
+        nova += " "
+    elif i not in vog:
+        nova += "p"
+    else:
+        nova += i
+    
+print(nova)

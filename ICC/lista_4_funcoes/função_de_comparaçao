@@ -1,0 +1,17 @@
+def compare(A,B):
+    if A > B:
+        return 1
+    elif A == B:
+        return 0
+    else:
+        return -1
+    
+A = int(input())
+B = int(input())
+
+if compare(A,B) == 1:
+    print("x e maior que y")
+elif compare(A,B) == 0:
+    print("x e igual a y")
+else:
+    print("x e menor que y")

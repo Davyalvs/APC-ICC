@@ -1,0 +1,24 @@
+a, b, c = map(float,input().split())
+
+if b>a and b>c:
+    aux1 = a
+    a = b
+    b = aux1
+elif(c>a and c>b):
+    aux2 = a
+    a = c
+    c = aux2
+
+if a >= (b+c):
+    print("NAO FORMA TRIANGULO")
+elif (a**2) > (b**2 + c**2):
+    print("TRIANGULO OBTUSANGULO")
+if (a**2) == (b**2 + c**2):
+    print("TRIANGULO RETANGULO")
+if (a**2) < (b**2 + c**2):
+    print("TRIANGULO ACUTANGULO")
+if a == b and b == c and a == c:
+    print("TRIANGULO EQUILATERO")
+if (a == b and a != c) or (a == c and a != b) or (c == b and c != a):
+    print("TRIANGULO ISOSCELES")
+

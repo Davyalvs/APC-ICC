@@ -1,0 +1,23 @@
+def menor(X,Y):
+    if X>=Y:
+        return Y
+    else:
+        return X
+
+def maior(X,Y):
+    if X<=Y:
+        return Y
+    else:
+        return X
+
+A = int(input())
+B = int(input())
+C = int(input())
+
+aux = menor(A,B)
+
+print(f'menor numero: {menor(aux,C)}')
+
+aux = maior(A,B)
+
+print(f'maior numero: {maior(aux,C)}')

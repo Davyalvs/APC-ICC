@@ -1,0 +1,13 @@
+n = int(input())
+
+m = 0
+para = 0
+
+while para == 0:
+    m += 1
+    for i in range(2,((m*n)+1)):
+        if ((m*n)+1) % i == 0:
+            para = 1
+            break
+
+print(m)

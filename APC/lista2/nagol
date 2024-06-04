@@ -1,0 +1,18 @@
+L, C, X, Y = map(int, input().split())
+
+if (C%2) == 0:
+    if Y%2 != 0:
+        print("Esquerda")
+    else:
+        print("Direita")
+else:
+    if X%2 == 0:
+        if Y%2 == 0:
+            print("Direita")
+        else:
+            print("Esquerda")
+    else:
+        if Y%2 == 0:
+            print("Esquerda")
+        else:
+            print("Direita")

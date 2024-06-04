@@ -1,0 +1,14 @@
+X = input()
+Y = input()
+
+I,O = 0,0
+
+for letra in X:
+    if letra in "jhonJHON":
+        I += 1
+
+for letra2 in Y:
+    if letra2 in "jhonJHON":
+        O += 1
+
+print(I-O,O)

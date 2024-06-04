@@ -1,0 +1,13 @@
+import math
+
+v, n = map(int, input().split())
+
+totalp = v*n
+
+for i in range(1,10):
+    if i == 9:
+        patual = math.ceil((totalp*i*10)/100)
+        print(patual)
+    else:
+        patual = math.ceil((totalp*i*10)/100)
+        print(patual, end=" ")

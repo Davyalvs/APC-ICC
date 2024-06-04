@@ -1,0 +1,35 @@
+carg = str(input())
+temp = int(input())
+atual = float(input())
+
+if atual < 1039:
+    print("Salário inválido!")
+else:
+    if carg == "Gerente" and temp <= 3:
+        R = atual*0.12
+        print("%.2f" % R)
+        print("%.2f" % (atual+R))
+    elif carg == "Gerente" and temp > 3 and temp <=6:
+        R = atual*0.13
+        print("%.2f" % R)
+        print("%.2f" % (atual+R))
+    elif carg == "Gerente" and temp > 6:
+        R = atual*0.15
+        print("%.2f" % R)
+        print("%.2f" % (atual+R))
+    elif carg == "Engenheiro" and temp <= 3:
+        R = atual*0.07
+        print("%.2f" % R)
+        print("%.2f" % (atual+R))
+    elif carg == "Engenheiro" and temp > 3 and temp <=6:
+        R = atual*0.11
+        print("%.2f" % R)
+        print("%.2f" % (atual+R))
+    elif carg == "Engenheiro" and temp > 6:
+        R = atual*0.14
+        print("%.2f" % R)
+        print("%.2f" % (atual+R))
+    else:
+        R = atual * 0.05
+        print("%.2f" % R)
+        print("%.2f" % (atual+R))

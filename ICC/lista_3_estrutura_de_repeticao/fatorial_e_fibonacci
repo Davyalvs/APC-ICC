@@ -1,0 +1,27 @@
+X = int(input())
+
+fib = []
+
+A = 1
+B = 1
+fat = 1
+
+for i in range(X):
+    fib.append(A)
+    aux1 = A
+    A = B
+    B = aux1 + B
+
+for j in range(1,(X+1)):
+    fat = j * fat
+
+print(fib[X-1], fat, end=" ")
+
+for i in range(X+1):
+    fib.append(A)
+    aux1 = A
+    A = B
+    B = aux1 + B
+
+if (fib[X-1])%2 == 0:
+    print(fib[X]-fib[X-1])

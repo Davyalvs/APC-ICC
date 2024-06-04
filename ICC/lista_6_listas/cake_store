@@ -1,0 +1,21 @@
+F,P = input().split()
+F,P = [int(F),int(P)]
+
+X = []
+soma = 0
+ganhador = ""
+
+for i in range(F):
+    h,h1 = input().split()
+    h,h1 = [str(h),int(h1)]
+    X.append((h,h1))
+
+for i in range(F):
+    nome,indice_fatia = X[i]
+    if indice_fatia == P:
+        ganhador = nome
+        break
+    if indice_fatia < P:
+        P -= 1
+
+print(ganhador)

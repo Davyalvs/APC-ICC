@@ -1,0 +1,15 @@
+X = float(input())
+
+if X > 4500:
+    resultado = (2000 * 0) + (1000 * 0.08) + (1500 * 0.18) + ((X - 4500)*0.28)
+    print(f'R$ {resultado:.2f}')
+elif X >= 3000.1 and X <= 4500:
+    resultado = (2000 * 0) + (1000 * 0.08) + ((X - 3000) * 0.18)
+    print(f'R$ {resultado:.2f}')
+elif X >= 2000.1 and X <=3000:
+    resultado = (2000 * 0) + ((X - 2000) * 0.08)
+    print(f'R$ {resultado:.2f}')
+elif X < 2000:
+    print("Isento")
+
+

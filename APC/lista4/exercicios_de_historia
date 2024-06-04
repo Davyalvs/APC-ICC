@@ -1,0 +1,12 @@
+import math
+
+while True:
+    try:
+        X = int(input())
+        if X>=1 and X<=100:
+            print(1)
+        else:
+            a = math.ceil(X/100)
+            print(a)
+    except EOFError:
+        break

@@ -1,0 +1,8 @@
+x = input()
+
+print(x[2],end="")
+
+for ind,letra in enumerate(x):
+    if letra == " ":
+        print(x[ind+3],end="")
+    

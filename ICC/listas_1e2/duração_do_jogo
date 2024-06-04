@@ -1,0 +1,12 @@
+x1,x2,y1,y2 = input().split()
+x1,x2,y1,y2 = [int(x1),int(x2),int(y1),int(y2)]
+
+dura = (y1 * 60 + y2) - (x1 * 60 +x2)
+
+if dura <= 0:
+    dura += 1440
+
+hora = dura // 60
+minuto = dura % 60
+
+print("O JOGO DUROU",hora, "HORA(S) E",minuto,"MINUTOS(S)")

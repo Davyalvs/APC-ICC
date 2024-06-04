@@ -1,0 +1,20 @@
+
+dic = {"a":["ab","ba"],"b":"k"}
+
+for item,va in dic.items():
+    print(item,va,end="")
+
+print()
+
+for key in dic.keys():
+    print(key,end="")
+
+print()
+
+for valores in dic.values():
+    if valores == "k":
+        print(dic,end="")
+
+
+x = input().split()
+print(x)

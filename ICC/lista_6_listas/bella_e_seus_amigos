@@ -1,0 +1,12 @@
+X = int(input())
+
+A = []
+
+for i in range(X):
+    h = input()
+    A.append(h)
+
+if "André" in A:
+    print("Cuidado!")
+else:
+    print("Seguro!")

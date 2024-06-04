@@ -1,0 +1,17 @@
+x = list(input())
+
+i = 0
+
+if x[0] in "abcdefghijklmnopqrstuvwxyz":
+    x[0] = x[0].upper()
+
+while i < len(x):
+    if x[i] == "_" and i < len(x)-1:
+        del x[i]
+        x[i] = x[i].upper()
+        continue
+    elif x[i] == "_" and i == len(x)-1:
+        del x[i]
+    i += 1
+    
+print("".join(x))

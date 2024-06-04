@@ -1,0 +1,14 @@
+X = int(input())
+
+chute = int(input())
+
+if chute == X:
+    print("Parabéns! Você acertou.")
+else:
+    while X != chute:
+        if chute > X:
+            print("O número correto é menor.")
+        elif chute < X:
+            print("O número correto é maior.")
+        chute = int(input())
+    print("Parabéns! Você acertou.")

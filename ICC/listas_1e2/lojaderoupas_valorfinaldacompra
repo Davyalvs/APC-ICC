@@ -1,0 +1,11 @@
+X,Y = input().split()
+X,Y = [float(X), int(Y)]
+
+if Y == 1:
+    print("%.2f" % (X*0.95),"%.2f" % (X*0.95))
+elif Y == 2:
+    print("%.2f" % X,"%.2f" % (X/2))
+elif Y == 3:
+    print("%.2f" % (X*1.05),"%.2f" % ((X*1.05)/3))
+else:
+    print("%.2f" % (X*1.1),"%.2f" % ((X*1.1)/4))

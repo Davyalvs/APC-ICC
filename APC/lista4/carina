@@ -1,0 +1,12 @@
+Q = int(input())
+
+while Q > 0:
+    L, R = map(int, input().split())
+    quadrados = 0
+    for i in range(L, R):
+        quadper = int(i**(1/2))
+        if i == quadper ** 2:
+            quadrados += 1
+    print(quadrados+1)
+    
+    Q -= 1

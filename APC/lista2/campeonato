@@ -1,0 +1,16 @@
+CV, CE, CG, FV, FE, FG = map(int, input().split())
+
+pontosC = CV*3 + CE
+pontosF = FV*3 + FE
+
+if pontosC>pontosF:
+    print("C")
+elif pontosC<pontosF:
+    print("F")
+else:
+    if CG>FG:
+        print("C")
+    elif FG>CG:
+        print("F")
+    else:
+        print("=")

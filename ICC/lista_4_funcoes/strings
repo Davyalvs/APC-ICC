@@ -1,0 +1,38 @@
+def length(s):
+    if not s:
+        return 0
+    else:
+        return 1 + length(s[1:])
+
+def concat(s1, s2):
+    if not s1:
+        return s2
+    else:
+        return s1[0] + concat(s1[1:], s2)
+
+def rev(s):
+    if not s:
+        return s
+    else:
+        return concat(rev(s[1:]), s[0])
+
+def prefix(s1, s2):
+    if not s1:
+        return True
+    elif not s2:
+        return False
+    elif s1[0] == s2[0]:
+        return prefix(s1[1:], s2[1:])
+    else:
+        return False
+
+s1 = input()
+s2 = input()
+
+concatenation = concat(s1, s2)
+reversed_s1 = rev(s1)
+is_prefix = prefix(s1, s2)
+
+print(concatenation)
+print(reversed_s1)
+print(is_prefix)

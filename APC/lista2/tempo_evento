@@ -1,0 +1,24 @@
+dia, dini = input().split()
+dia, dini = [str(dia),int(dini)]
+hi, mi, si = map(int, input().split(" : "))
+
+dia2, dfim = input().split()
+dia2, dfim = [str(dia),int(dfim)]
+hf, mf, sf = map(int, input().split(" : "))
+
+total =  (dfim * 86400 + hf * 3600 + mf * 60 + sf) - (dini * 86400 + hi * 3600 + mi * 60 + si)
+
+dias = total//86400
+aux1 = total%86400
+
+horas = aux1//3600
+aux2 = aux1%3600
+
+min = aux2//60
+
+seg = aux2%60
+
+print(f'{dias} dia(s)')
+print(f'{horas} hora(s)')
+print(f'{min} minuto(s)')
+print(f'{seg} segundo(s)')

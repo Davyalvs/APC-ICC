@@ -1,0 +1,19 @@
+while True:
+    try:
+        N = int(input())
+
+        espacos = (N//2)
+        for i in range(1,N+1,2):
+            folhas = '*' * i
+            print(f'{espacos * " " + folhas}')
+            espacos -= 1
+
+        espacos = (N//2)
+        for j in range(1,4,2):
+            tronco = '*' * j
+            print(f'{espacos * " " + tronco}')
+            espacos -= 1
+        print()
+    except EOFError:
+        break
+

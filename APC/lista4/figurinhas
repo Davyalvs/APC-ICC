@@ -1,0 +1,17 @@
+def gdc(a,b):
+    if b==0:
+        return a
+    return gdc(b, a%b)
+
+n = int(input())
+
+for _ in range(n):
+    A,B = input().split()
+    A,B = [int(A),int(B)]
+
+    aux = A
+    maior = A
+    if B > A:
+        A = B
+        B = aux
+    print(gdc(A,B))

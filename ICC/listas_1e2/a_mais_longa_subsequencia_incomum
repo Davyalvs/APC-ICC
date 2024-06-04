@@ -1,0 +1,13 @@
+A = str(input())
+B = str(input())
+
+a = len(A)
+b = len(B)
+
+if A == B:
+    print("-1")
+elif a > b:
+    print(a)
+else:
+    print(b)
+    

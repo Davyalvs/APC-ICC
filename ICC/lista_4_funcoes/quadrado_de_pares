@@ -1,0 +1,16 @@
+def pares(n):
+    if n == 0:
+        return 0
+    elif n % 2 != 0:
+        return pares(n-1)
+    elif n % 2 == 0 and n != 2:
+        print(n,"^2 = ",n**2,sep="")
+        return pares(n-1)
+    if n == 2:
+        return print(n,"^2 = ",n**2,sep="")
+
+x = int(input())
+
+while x != 0:
+    pares(x)
+    x = int(input())

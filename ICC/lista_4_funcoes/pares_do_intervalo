@@ -1,0 +1,14 @@
+def pares(n):
+    if n == 0:
+        return 0
+    elif n % 2 != 0:
+        return pares(n-1)
+    elif n % 2 == 0 and n != 2:
+        print(n)
+        return pares(n-1)
+    if n == 2:
+        return print(n)
+
+    
+x = int(input())
+pares(x)

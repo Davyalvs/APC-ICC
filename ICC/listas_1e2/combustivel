@@ -1,0 +1,8 @@
+temp = float(input())
+vel = float(input())
+
+dis = temp * vel
+
+lit = dis/14.2
+
+print("{} {:.2f}".format(dis,lit))

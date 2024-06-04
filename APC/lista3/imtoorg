@@ -1,0 +1,8 @@
+def toorg(X):
+    if X > 0:
+        B = input()
+        print("I am Toorg!")
+        toorg(X-1)
+
+n = int(input())
+toorg(n)

@@ -1,0 +1,13 @@
+par,imp = input().split()
+par,imp = [int(par), int(imp)]
+
+dif = imp - par
+
+if par == 0 and imp == 0:
+    print(par, imp, "errados")
+elif par > imp:
+    print(par, imp, "errados")
+elif dif > 1:
+    print(par, imp, "errados")
+else:
+    print(par, imp, "ok")

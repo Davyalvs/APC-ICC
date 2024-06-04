@@ -1,0 +1,11 @@
+N = int(input())
+
+while True:
+    try:
+        ene = int(input())
+        if ene > 8000:
+            print("Mais de 8000!")
+        else:
+            print("Inseto!")
+    except EOFError:
+        break

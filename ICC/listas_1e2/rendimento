@@ -1,0 +1,10 @@
+dep = float(input())
+tax = float(input())
+
+X = tax/100
+
+rendi = dep * X
+tot = dep + rendi
+
+print("%.2f" % rendi)
+print("%.2f" % tot)

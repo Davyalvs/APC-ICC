@@ -1,0 +1,28 @@
+pes = float(input())
+alt = float(input())
+
+imc = pes/(alt**2)
+X = pes - (24.9*alt*alt)
+
+if imc < 18.5:
+    print("%.2f" % imc)
+    print("Baixo peso")
+elif imc >= 18.5 and imc < 24.9:
+    print("%.2f" % imc)
+    print("Peso normal")
+elif imc >= 24.9 and imc < 29.9:
+    print("%.2f" % imc)
+    print("Sobrepeso")
+    print("%.2f" % X)
+elif imc >= 29.9 and imc < 34.9:
+    print("%.2f" % imc)
+    print("Obesidade grau I")
+    print("%.2f" % X)
+elif imc >=  34.9 and imc < 39.9:
+    print("%.2f" % imc)
+    print("Obesidade grau II")
+    print("%.2f" % X)
+else:
+    print("%.2f" % imc)
+    print("Obesidade grau III")
+    print("%.2f" % X)

@@ -1,0 +1,30 @@
+def gravidade(ma):
+    n = len(ma)
+    n1 = len(ma[0])
+    for i in range(n1):
+        for i1 in range(n):
+            if ma[i1][i] == 'o':
+                while i1 + 1 < n and ma[i1 + 1][i] == '.':
+                    ma[i1][i], ma[i1 + 1][i] = ma[i1 + 1][i], ma[i1][i]
+                    i1 += 1
+        for i1 in range(n):
+            if ma[i1][i] == 'o':
+                while i1 + 1 < n and ma[i1 + 1][i] == '.':
+                    ma[i1][i], ma[i1 + 1][i] = ma[i1 + 1][i], ma[i1][i]
+                    i1 += 1
+            
+    return ma
+            
+
+X = int(input())
+
+ma = []
+
+for i in range(X):
+    arg = list(input())
+    ma.append(arg)
+
+result = gravidade(ma)
+
+for elem in ma:
+    print("".join(elem))

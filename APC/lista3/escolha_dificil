@@ -1,0 +1,15 @@
+def refeicao(d, r):
+    if d > r:
+        return 0
+    else:
+        return r - d
+
+
+ca, ba, pa = map(int,input().split())
+cr, br, pr = map(int,input().split())
+
+a = refeicao(ca,cr)
+b = refeicao(ba,br)
+c = refeicao(pa,pr)
+
+print(a+b+c)

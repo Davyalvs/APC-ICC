@@ -1,0 +1,13 @@
+n = int(input())
+
+p,u = 0,0
+
+for i in range(n):
+    x = input()
+    for j in x:
+        if j.lower() == "p":
+            p += 1
+        if j.lower() == "u":
+            u += 1
+
+print(p,u)

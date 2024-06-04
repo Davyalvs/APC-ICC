@@ -1,0 +1,60 @@
+total = float(input())
+
+X = int(total)
+resto = round(total-X,2)
+
+# notas
+
+n100 = X//100
+a1 = X%100
+
+n50 = a1//50
+a2 = a1%50
+
+n20 = a2//20
+a3 = a2%20
+
+n10 = a3//10
+a4 = a3%10
+
+n5 = a4//5
+a5 = a4%5
+
+n2 = a5//2
+a6 = a5%2
+
+
+# moedas
+
+m = int((a6+resto)*100)
+
+m100 = m//100
+au1 = m%100
+
+m50 = au1//50
+au2 = au1%50
+
+m20 = au2//25
+au3 = au2%25
+
+m10 = au3//10
+au4 = au3%10
+
+m5 = au4//5
+au5 = au4%5
+
+m2 = au5//1
+au6 = au5%1
+
+print(n100, "nota(s) de R$ 100,00")
+print(n50, "nota(s) de R$ 50,00")
+print(n20, "nota(s) de R$ 20,00")
+print(n10, "nota(s) de R$ 10,00")
+print(n5, "nota(s) de R$ 5,00")
+print(n2, "nota(s) de R$ 2,00")
+print(f'{m100} moeda(s) de R$ 1,00')
+print(f'{m50} moeda(s) de R$ 0,50')
+print(f'{m20} moeda(s) de R$ 0,25')
+print(f'{m10} moeda(s) de R$ 0,10')
+print(f'{m5} moeda(s) de R$ 0,05')
+print(f'{m2} moeda(s) de R$ 0,01')

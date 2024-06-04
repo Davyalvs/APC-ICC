@@ -1,0 +1,32 @@
+def contar_brinquedos_fora_do_lugar(N, brinquedos, movimentos):
+    prateleira_inicial = brinquedos.copy()
+
+    for movimento in movimentos:
+        brinquedo, direcao, quantidade = movimento
+
+        indice_brinquedo = brinquedos.index(brinquedo)
+        if direcao == 'E':
+            novo_indice = max(0, indice_brinquedo - quantidade)
+        else:
+            novo_indice = min(N - 1, indice_brinquedo + quantidade)
+
+        brinquedos.remove(brinquedo)
+        brinquedos.insert(novo_indice, brinquedo)
+
+    brinquedos_fora_do_lugar = sum(1 for i in range(N) if brinquedos[i] != prateleira_inicial[i])
+    return brinquedos_fora_do_lugar
+
+# Leitura da entrada
+N = int(input())
+brinquedos = input().split()
+
+movimentos = []
+for _ in range(5):
+    brinquedo, direcao, quantidade = input().split()
+    movimentos.append((brinquedo, direcao, int(quantidade)))
+
+# Chamada da função para contar os brinquedos fora do lugar
+brinquedos_fora_do_lugar = contar_brinquedos_fora_do_lugar(N, brinquedos, movimentos)
+
+# Imprimir o número de brinquedos fora do lugar
+print(brinquedos_fora_do_lugar)

@@ -1,0 +1,8 @@
+ini, fim = map(int, input().split())
+
+dura = fim - ini
+
+if dura <= 0:
+    dura += 24
+
+print("O JOGO DUROU",dura, "HORA(S)")

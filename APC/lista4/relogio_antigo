@@ -1,0 +1,9 @@
+while True:
+    try:
+        A,B = map(int, input().split())
+        horas = A*12//360
+        minutos = B*60//360
+        print(f'{horas:02d}:{minutos:02d}')
+
+    except EOFError:
+        break

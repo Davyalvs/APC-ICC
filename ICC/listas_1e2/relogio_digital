@@ -1,0 +1,10 @@
+X = int(input())
+
+H = X//3600
+aux1 = X%3600
+
+M = aux1//60
+
+S = aux1%60
+
+print(H , "h:", M, "m:",S , "s",sep="")

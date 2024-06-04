@@ -1,0 +1,25 @@
+N = int(input())
+
+AM = 0.0
+
+for i in range(N):
+    soma = 0
+    No,A,V,O,I,P = input().split()
+    No,A,V,O,I,P = [str(No),float(A),float(V),float(O),float(I),float(P)]
+
+    soma = V+O+I+P
+
+    if i == 0:
+        menor = min(V,O,I,P)
+        maior = soma
+        Nmaior = No
+        Nmenor = No
+    if soma > maior:
+        Nmaior = No
+    if V < menor or O < menor or I < menor or P < menor:
+        Nmenor = No
+    AM = AM + A
+    
+print(Nmaior)
+print(Nmenor)
+print("%.2f" % (AM/N))

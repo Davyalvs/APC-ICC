@@ -1,0 +1,11 @@
+E, F, C = map(int, input().split())
+
+bebeu = 0
+garrafas_vazias = E + F
+
+while garrafas_vazias >= C:
+    garrafas_novas = garrafas_vazias//C
+    bebeu += garrafas_novas
+    garrafas_vazias = garrafas_vazias%C + garrafas_novas
+
+print(bebeu)

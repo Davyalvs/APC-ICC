@@ -1,0 +1,16 @@
+import string
+x = input()
+
+number = "0123456789"
+up = string.ascii_uppercase
+lo = string.ascii_lowercase
+
+for i in x:
+    if i == " ":
+        print("W",end="")
+    elif i in number:
+        print("D",end="")
+    elif i in up:
+        print("U",end="")
+    elif i in lo:
+        print("L",end="")

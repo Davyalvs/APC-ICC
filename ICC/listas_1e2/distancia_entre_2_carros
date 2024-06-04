@@ -1,0 +1,7 @@
+dist = float(input())
+
+X = 15
+t1 = dist/X
+t2 = int(t1 * 60)
+
+print (str(t2) + " minutos")

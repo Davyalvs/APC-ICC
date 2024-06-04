@@ -1,0 +1,26 @@
+N = int(input())
+
+nf = 0
+conta = 0
+nt = 0
+
+for i in range(N):
+    N1,N2,N3,fal = input().split()
+    N1,N2,N3,fal = [float(N1),float(N2),float(N3),int(fal)]
+
+    media = ((N1+N2+N3)/3)
+
+    if media >= 5 and fal <= 16:
+        print("%.1f" % media, "Aprovado")
+        conta += 1
+    elif media > 3 and media < 5 and fal <= 16:
+        print("%.1f" % media, "Exame")
+    elif media <= 3 or fal > 16:
+        print("%.1f" % media, "Reprovado")
+    else:
+        print("%.1f" % media, "Reprovado")
+    nt = nt + media
+
+nt2 = nt/N
+
+print ("%.1f" % nt2, conta)

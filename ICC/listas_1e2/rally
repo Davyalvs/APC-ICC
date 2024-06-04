@@ -1,0 +1,41 @@
+t1,v1,t2,v2 = input().split() #tempo em segundos e velocidade em km/h
+t1,v1,t2,v2  = [int(t1),int(v1),int(t2),int(v2)]
+
+#trecho 1 em 30 min / segundo a mais 1 ponto / segundo a menso 2 pontos/ vel max 60km / para cada km acima do permitido 10 pontos
+#trecho 2 em 60 min / segundo a mais 1 ponto / segundo a menso 2 pontos/ vel max 40km / para cada km acima do permitido 20 pontos
+
+pont1 = 0
+pont2 = 0
+pont1A = 0
+pont2A = 0    
+
+#pontuação do tempo trecho 1
+if t1 == 0:
+    pont1 = 1000
+elif t1 > 1800:
+    pont1 += t1 - 1800
+elif t1 < 1800:
+    pont1 += (1800 - t1)*2
+
+#pontuação da vel trecho 1
+if v1 > 60:
+    pont1A += (v1 - 60)*10
+
+#pontuação do tempo trecho 2
+if t2 == 0:
+    pont2 = 1000
+elif t2 > 3600:
+    pont2 += t2 - 3600
+elif t2 < 3600:
+    pont2 += (3600 - t2)*2
+
+#pontuação da vel trecho 2
+if v2 > 40:
+    pont2A += (v2 - 40)*20
+
+print("-",pont1,sep="")
+print("-",pont1 + pont1A,sep="")
+print("-",pont2,sep="")
+print("-",pont2 + pont2A,sep="")
+print("-",pont1 + pont2,sep="")
+print("-",pont1 + pont1A + pont2 + pont2A,sep="")
